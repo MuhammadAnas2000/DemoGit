@@ -1,0 +1,6 @@
+git diff
+
+//working area ko staging area se compare krta hn...
+
+git diff --staged
+//Pechle commit ko abhi k staging area se compare krta han.
