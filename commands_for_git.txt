@@ -13,3 +13,7 @@ git rm filename
 
 git mv current_file_name rename_new_name
 ..Rename the file
+
+
+git rm --cached filename
+//Untrack the filee
