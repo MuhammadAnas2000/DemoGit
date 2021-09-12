@@ -6,3 +6,7 @@ git diff --staged
 //Pechle commit ko abhi k staging area se compare krta han.
 
 git commit -a -m "Direct commit without staging area"
+//If we make new filde then this command will not work so first we do git add . this command use for modified files for skipping the stagging area.h
+
+git rm filename
+// Remove the file
