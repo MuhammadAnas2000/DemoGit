@@ -10,3 +10,6 @@ git commit -a -m "Direct commit without staging area"
 
 git rm filename
 // Remove the file
+
+git mv current_file_name rename_new_name
+..Rename the file
