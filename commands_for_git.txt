@@ -4,3 +4,5 @@ git diff
 
 git diff --staged
 //Pechle commit ko abhi k staging area se compare krta han.
+
+git commit -a -m "Direct commit without staging area"
