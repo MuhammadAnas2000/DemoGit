@@ -39,3 +39,9 @@ git log --2.days
 
 git restore --staged filename
 //to unstage the file
+
+git checkout -- filename
+//previous commit me lekr chla jaiga lekin stagging area me add krne se phele
+
+git checkout -f
+//previous commit me puri working directory lekr chla jaiga lekin stagging area me add krne se phele
