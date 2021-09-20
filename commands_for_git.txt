@@ -9,11 +9,33 @@ git commit -a -m "Direct commit without staging area"
 //If we make new filde then this command will not work so first we do git add . this command use for modified files for skipping the stagging area.h
 
 git rm filename
-// Remove the file
+// Remove the file and add it to staging area
 
 git mv current_file_name rename_new_name
-..Rename the file
+..Rename the file and add it to staging area
 
 
 git rm --cached filename
 //Untrack the filee
+
+
+rm -rf .git
+delete .git repositery
+
+git log -p
+ye bhi dekhae ga k kya cheez change kri hn
+
+git log -p (-2 or -3)
+it shows only 2 or 3 commit with difference
+
+git log --stat
+it shows short summary of every author changes.
+
+git log --pretty=oneline
+show all commits in one line
+
+git log --2.days
+// shows 2 days commit
+
+git restore --staged filename
+//to unstage the file
