@@ -44,4 +44,4 @@ git checkout -- filename
 //previous commit me lekr chla jaiga lekin stagging area me add krne se phele
 
 git checkout -f
-//previous commit me puri working directory lekr chla jaiga lekin stagging area me add krne se phele
+//previous commit me puri working directory lekr chla jaiga lekin stagging area me add krne k bd bhi lekin commit k bd nhi le kr jaiga
