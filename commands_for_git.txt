@@ -4,26 +4,29 @@ git status
 git init
 //Initialize empty git repositery.
 
-git add --a
+git add --a or git add .
 //sari files ko stagging area me le kr jata hn
+
+git add filename
+//only add that particular file to staging area.
 
 git commit -m "//Commit name"
 //For doing commit
 
 git diff
-//working area ko staging area se compare krta hn...
+//working area(mtlb stagging wali file ko humne or modigy kara hn lekin abhi phir se stage nhi kia hn) ko staging area se compare krta hn...
 
 git diff --staged
 //Pechle commit ko abhi k staging area se compare krta han.
 
 git commit -a -m "Direct commit without staging area"
-//If we make new filde then this command will not work so first we do git add . this command use for modified files for skipping the stagging area.h
+//If we make new filde then this command will not work so first we do git add . this command use for modified files for skipping the stagging area and add do direct commit.
 
 git rm filename
-// Remove the file and add it to staging area
+// Remove the file and add it to staging area automatically(if we manually delete the file then we must use git add . to add it stagging area manually)
 
 git mv current_file_name rename_new_name
-..Rename the file and add it to staging area
+//Rename the file and add it to staging area automatically(if we manually rename the file then we must use git add . to add it stagging area manually)
 
 
 git rm --cached filename
@@ -32,6 +35,9 @@ git rm --cached filename
 
 rm -rf .git
 delete .git repositery
+
+git log
+//to see all previous commit
 
 git log -p
 ye bhi dekhae ga k kya cheez change kri hn
@@ -43,10 +49,19 @@ git log --stat
 it shows short summary of every author changes.
 
 git log --pretty=oneline
-show all commits in one line
+//show all commits in one line
 
-git log --2.days
+git log --pretty=short
+//short me commit dekhaiga author or date nhi dekhaiga
+
+git log --pretty=full
+// thora zada info dega author or date bhi dekhaiga.
+
+git log --2.days or git log --2.weeks or git log --2.years
 // shows 2 days commit
+
+git clone //link //folder name
+//It can clone the git repository folder name optional hn.
 
 git restore --staged filename
 //to unstage the file
@@ -56,3 +71,13 @@ git checkout -- filename
 
 git checkout -f
 //previous commit me puri working directory lekr chla jaiga lekin stagging area me add krne k bd bhi lekin commit k bd nhi le kr jaiga
+
+touch .gitignore
+// in this folder we add those file which we want to ignore
+
+we write these in .gitignore to stop tracking
+error.log	//It stops track error.log file
+*.log           //It stops all the files containing .log
+dir/		//Suppose dir is a directory in insite it contains more file but this coomand will stop tract this dir directory and inside files.This dir includes all 		outside and inside(inside some folder) dir directory.
+
+/dir/		//It cannot ignore inside dir wali directory and can ignore outerside wala dir
