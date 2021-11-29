@@ -1,5 +1,16 @@
-git diff
+git status
+// show you tracking report if there is no git tracking then show eror after that we add git repository by using git init.
 
+git init
+//Initialize empty git repositery.
+
+git add --a
+//sari files ko stagging area me le kr jata hn
+
+git commit -m "//Commit name"
+//For doing commit
+
+git diff
 //working area ko staging area se compare krta hn...
 
 git diff --staged
