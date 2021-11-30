@@ -13,6 +13,10 @@ git add filename
 git commit -m "//Commit name"
 //For doing commit
 
+git commit --amend
+first we add working area to staging area as usual then do git -log then sell all commits after that we can add there changes to any commit and rename it.
+after entering this coomand type i to next open termial to edit the commit the press escape then colon(:)ws .this will work fine
+
 git diff
 //working area(mtlb stagging wali file ko humne or modigy kara hn lekin abhi phir se stage nhi kia hn) ko staging area se compare krta hn...
 
@@ -67,10 +71,13 @@ git restore --staged filename
 //to unstage the file
 
 git checkout -- filename
-//previous commit me lekr chla jaiga lekin stagging area me add krne se phele
+//previous commit me lekr chla jaiga or jo hum ne file m modify kra hn ause un modify krdega lekin stagging area me add krne se phele
 
 git checkout -f
 //previous commit me puri working directory lekr chla jaiga lekin stagging area me add krne k bd bhi lekin commit k bd nhi le kr jaiga
+
+git remote
+// bataega k koi repository remote(mtlb git) m hn k nhi
 
 touch .gitignore
 // in this folder we add those file which we want to ignore
